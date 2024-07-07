@@ -1,0 +1,32 @@
+---
+title: "Tools-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Tools-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Tools)
+```
+
+```{r}
+prime_factors(98)
+```
+
+```{r}
+most_frequent(c(1, 2, 2, 3, 3, 3, 4))
+```
+
+```{r}
+simple_plot(c(1, 2, 2, 3, 3, 3, 4), "histogram")
+```
+
